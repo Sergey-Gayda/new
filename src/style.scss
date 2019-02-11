@@ -1,0 +1,35 @@
+.body *,
+.body *::before,
+.body *::after {
+  box-sizing: inherit;
+}
+
+.body {
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+.body a {
+  text-decoration: none;
+}
+
+.body p {
+  margin: 0;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
