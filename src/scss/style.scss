@@ -1,0 +1,117 @@
+@import "normalize.scss";
+@import "fonts.scss";
+
+
+$font: 'PT Sans', sans-serif, arial;
+
+.kolokol path{
+  fill: red;
+}
+
+.par {
+  font-family: $font;
+  font-weight: bold;
+}
+
+.search {
+  width: 30px;
+  height: 30px;
+}
+
+.img-sd {
+  background-image: url("../img/Poisk.svg");
+  width: 102px;
+  height: 102px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.body a {
+  text-decoration: none;
+}
+
+.body p {
+  margin: 0;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.wrap {
+  max-width: 1280px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header__top {
+  margin: 0 auto;
+  border-bottom: 5px solid #0060ff;
+  background: #1c418e url("../img/04.jpg");
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__menu-button {
+  content: "";
+  width: 36px;
+  height: 2px;
+  margin-top: 45px;
+  background-color: #fff;
+  box-shadow: 0 8px 0 0 #fff, 0 16px 0 0 #fff;
+}
+
+.header__logo {
+
+}
+
+.kolokol svg{
+  width: 26px;
+  height: 26px;
+  fill: red;
+}
+
+.header__button {
+  position: relative;
+  display: inline-block;
+  width: 280px;
+  text-align: center;
+  padding: 11px;
+  margin: 15px auto;
+  color: #fff;
+  background-color: #0060ff;
+}
+
+.header__button::before {
+  position: absolute;
+  top: 8px;
+  left: 40px;
+  content: "";
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  background: url("../img/05.jpg") no-repeat left center;
+}
